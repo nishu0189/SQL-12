@@ -39,9 +39,9 @@ select * from dept where dept_id = @dept
 exec t1 50000, 100
 
 ------------------------------------------------insertion in procedure----------------------------------------------------------
-
 Alter procedure new1 (@salary int, @dept_id int)
 as
+if NOT EXISTS ( Select 1 from dept where dept_id = 700) --If you run this multiple times, the same (700, 'data') row will be inserted each time unless you handle duplicates.      
 insert into dept values(700,'data')  --insertion
 select salary, dept_id  --selection form dept
 from emp
@@ -109,7 +109,7 @@ begin
 return (select  @a * @b)
 end;
 
-select [dbo].[multi](2,4)  --[dbo].[multi] means schema_name.obj_name
+select [dbo].[multi](2,4) as Result  --[dbo].[multi] means schema_name.obj_name
 
 
 
