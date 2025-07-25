@@ -1,8 +1,8 @@
 # SQL-12
-📘 SQL Practice: Procedures, Functions, Pivoting & Data Storage
+### 📘 SQL Practice: Procedures, Functions, Pivoting & Data Storage
 This notebook showcases advanced SQL topics beyond basic querying — including Stored Procedures, User-Defined Functions, Pivot/Unpivot Operations, and Storing Query Results into Tables. These are commonly used in real-world SQL development, especially in BI reporting, ETL pipelines, and backend data processing.
 
-✅ Topics Covered
+### ✅ Topics Covered
 🔹 Stored Procedures
 Basic Procedure Creation
 
